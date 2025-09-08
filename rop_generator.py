@@ -22,7 +22,7 @@ from collections import defaultdict, Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from enum import Enum
 
-# === ЗАВИСИМОСТИ (с обработкой ошибок) ===
+
 try:
     import capstone
     CAPSTONE_AVAILABLE = True
@@ -219,7 +219,7 @@ class Gadget:
             return
         
         try:
-            # Создаем символическую переменную для входного стека
+            
             input_val = z3.BitVec('input', 64)
             state = {'rax': z3.BitVecVal(0, 64), 'rbx': z3.BitVecVal(0, 64)}
             
@@ -795,3 +795,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
