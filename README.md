@@ -3,7 +3,7 @@
 ## Installation Requirements
 
 ```bash
-pip install capstone pefile pyelftools
+pip install capstone pefile pyelftools z3-solver pycryptodome
 ```
 
 ## Usage Examples
